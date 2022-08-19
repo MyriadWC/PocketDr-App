@@ -1,0 +1,238 @@
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,700"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css"/>
+    <link rel="stylesheet" href="index.css"/>
+</head>
+<img class="phone-bg" src="./img/phone-template.png" />
+<div class="mobile-wrap">
+    <div class="mobile clearfix">
+        <div class="header">
+            <span class="fas fa-plus-circle nav-button pull-left"><i></i></span>
+            <span class="title">PocketDr.</span>
+            <a href="#credits" class="help"><span class="fas fa-question-circle pull-right"></span></a>
+        </div>
+        <div class="sidebar">
+            <div class="sidebar-overlay"></div>
+            <div class="sidebar-content">
+                <div class="top-head">
+                    <div class="name">Susie Bennett</div>
+                </div>
+                <div class="nav-left">
+                    <a href="#welcome"><span class="fas fa-plus-circle"></span>Panel</a>
+                    <a href="#chats"><span class="fas fa-address-card"></span>Emergency Contacts</a>
+                    <a href="#profile"><span class="fas fa-user-circle"></span>Profile</a>
+                    <a href="#settings"><span class="fas fa-cog"></span>Settings</a>
+                    <a href="#credits"><span class="fas fa-life-ring"></span>Help</a>
+                    <a href="#details"><span class="fas fa-info-circle"></span>Details</a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="html welcome visible">
+                <div class="datetime">
+                    <div class="welcome-header">Welcome Back Susie</div>
+                    <div class="date lightSpeedIn animated">Jan 30, 2020</div>
+                    <div class="fas fa-battery-three-quarters battery"></div>
+                </div>
+                <div class="data-panels">
+                    <div class="panel heart-rate-panel">
+                        <a href="data-page" class="title" data-value="HR">Heart Rate</a>
+                        <canvas class="panel-chart" id="panel-chart-hr"></canvas>
+                        <span class="info">10-day average: <b>67 bpm</b></span>
+                        <div class="status-symbol good"><span class="fas fa-check-circle"></span></div>
+                    </div>
+
+                    <div class="panel blood-pressure-panel">
+                        <a href="data-page" class="title" data-value="BP">Blood Pressure</a>
+                        <canvas class="panel-chart" id="panel-chart-bp"></canvas>
+                        <span class="info">10-day average: <b>132 / 81</b></span>
+                        <div class="status-symbol warning"><span class="fas fa-exclamation-circle"></span></div>
+                    </div>
+
+                    <div class="panel blood-oxygen-panel">
+                        <a href="data-page" class="title" data-value="BO">Blood Oxygen</a>
+                        <canvas class="panel-chart" id="panel-chart-bo"></canvas>
+                        <span class="info">10-day average: <b>78 mm Hg</b></span>
+                        <div class="status-symbol ok"><span class="fas fa-minus-circle"></span></div>
+                    </div>
+
+                    <div class="panel blood-sugar-panel">
+                        <a href="data-page" class="title" data-value="BS">Blood Sugar</a>
+                        <canvas class="panel-chart" id="panel-chart-bs"></canvas>
+                        <span class="info">10-day average: <b>90 mg/dL</b></span>
+                        <div class="status-symbol good"><span class="fas fa-check-circle"></span></div>
+                    </div>
+
+                    <div class="panel extra1-panel"><span class="title"></span></div>
+
+                    <div class="panel extra2-panel"><span class="title"></span></div>
+                </div>
+            </div>  
+            <div class="html chats">
+                <div class="active-users">
+                    <div class="user clearfix rotateInDownLeft animated">
+                        <div class="photo pull-left">
+                            <img src="./img/blank-profile.png">
+                        </div>
+                        <div class="desc pull-left">
+                            <p class="name">Emergency Services</p>
+                            <p class="position">999</p>
+                        </div>
+                        <div class="idle pull-right"><span class="online"></span></div>
+                    </div>
+                    <div class="user clearfix rotateInDownRight animated">
+                        <div class="photo pull-left">
+                            <img src="./img/blank-profile.png">
+                        </div>
+                        <div class="desc pull-left">
+                            <p class="name">Jacob Bennett</p>
+                            <p class="position">Husband</p>
+                        </div>
+                        <div class="idle pull-right"><span class="offline"></span></div>
+                    </div>
+                    <div class="user clearfix rotateInDownLeft animated">
+                        <div class="photo pull-left">
+                            <img src="./img/blank-profile.png">
+                        </div>
+                        <div class="desc pull-left">
+                            <p class="name">Steven Coeur</p>
+                            <p class="position">Cardiac Specialist</p>
+                        </div>
+                        <div class="idle pull-right"><span class="away"></span></div>
+                    </div>
+                    <div class="user clearfix rotateInDownRight animated">
+                        <div class="photo pull-left">
+                            <img src="./img/blank-profile.png">
+                        </div>
+                        <div class="desc pull-left">
+                            <p class="name">Tim Neville</p>
+                            <p class="position">GP</p>
+                        </div>
+                        <div class="idle pull-right"><span class="online"></span></div>
+                        <div class="quick-contact"></div>
+                    </div>
+                    <div class="user clearfix rotateInDownLeft animated">
+                        <div class="photo pull-left">
+                            <img src="./img/blank-profile.png">
+                        </div>
+                        <div class="desc pull-left">
+                            <p class="name">Miriam Lane</p>
+                            <p class="position">Neighbour</p>
+                        </div>
+                        <div class="idle pull-right"><span class="online"></span></div>
+                    </div>
+                    <div class="user clearfix rotateInDownRight animated">
+                        <div class="photo pull-left">
+                            <img src="./img/blank-profile.png">
+                        </div>
+                        <div class="desc pull-left">
+                            <p class="name">Theodore Bennett</p>
+                            <p class="position">Son</p>
+                        </div>
+                        <div class="idle pull-right"><span class="online"></span></div>
+                    </div>
+                </div>
+                <div class="text fadeInUp animated">Your Quick Contact is highlighted in <span>purple</span>. Press the ambulance in the bottom right corner to immediately call Tim</div>
+            </div>
+            <div class="html settings">
+                <div class="setting-list">
+                    <div class="gear clearfix slideInRight animated">
+                        <div class="title pull-left">General</div>
+                        <div class="action pull-right"><span class="ion-ios-arrow-right"></span></div>
+                    </div>
+                    <div class="gear clearfix slideInLeft animated">
+                        <div class="title pull-left"><label for="gear-notice">Font Size</label></div>
+                         <div class="action pull-right">Small <span class="ion-ios-arrow-right"></span></div>
+                    </div>
+                    <div class="gear clearfix slideInRight animated">
+                        <div class="title pull-left"><label for="gear-sound">Sound</label></div>
+                        <div class="action pull-right"><input id="gear-sound" class="on-off" type="checkbox" checked><label for="gear-sound"></label></div>
+                    </div>
+                    <div class="gear clearfix slideInLeft animated">
+                        <div class="title pull-left">Theme</div>
+                        <div class="action pull-right">Standard <span class="ion-ios-arrow-right"></span></div>
+                    </div>
+                    <div class="gear clearfix slideInRight animated">
+                        <div class="title pull-left">Help</div>
+                        <div class="action pull-right"><span class="ion-ios-arrow-right"></span></div>
+                    </div>
+                    <div class="gear clearfix slideInLeft animated">
+                        <div class="title pull-left">Log out</div>
+                        <div class="action pull-right"><span class="ion-ios-arrow-right"></span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="html profile">
+                <div class="photo flipInX animated">
+                    <img src="./img/susie.jpg">
+                </div>
+                <div class="details">
+                    <p class="heading flipInY animated">
+                        <span class="name">Susie Bennett</span><span class="position">Age 61</span>
+                    </p>
+                    <p class="text fadeInUp animated">Insert personal details here</p>
+                </div>
+            </div>
+            <div class="html credits">
+                <div class="title flipInY animated">FAQs</div>
+                <div class="credit-ol">
+                    <div class="credit-li lightSpeedIn animated"><a href="#" target="_blank">How do I connect the app to my PocketDr.? </a><span class="fas fa-chevron-circle-down"></span></div>
+                    <div class="credit-li lightSpeedIn animated"><a href="#" target="_blank">How do I know when it's time to recharge?</a><span class="fas fa-chevron-circle-down"></span></div>
+                    <div class="credit-li lightSpeedIn animated"><a href="#" target="_blank">What do the colours of the charts mean?</a><span class="fas fa-chevron-circle-down"></span></div>
+                </div>
+                <div class="text zoomInUp animated">If your question isn't answered here, you can call one of our support staff at <span>01427 843 756<span></div>
+            </div>
+            <div class="html data-page">
+                <span class="time-dropdown">
+                    <select>
+                        <option value="10-days">Last 10 days</option>
+                        <option value="28-days">Last 28 days</option>
+                        <option value="prev-month">Previous Month</option>
+                        <option value="365-days">Last 365 days</option>
+                    </select>
+                </span>
+                <canvas id="full-chart"></canvas>
+                <div class="ol">
+                   <div class="li lightSpeedIn animated">Row 1</div>
+                   <div class="li lightSpeedIn animated">Row 2</div>
+                   <div class="li lightSpeedIn animated">Row 3</div>
+                   <div class="li lightSpeedIn animated">Row 4</div>
+                </div>
+                <a href="#home" class="back-button"><span class="far fa-arrow-alt-circle-left"></span></a>
+            </div>
+            <div class="html details">
+                <div class="main">
+                    <span class="app_name">PocketDr.</span>
+                    <span class="inline-block"><b>Ver No:</b> 1.01.01.01</span>
+                    <span class="inline-block"><b>Date of manufacture:</b> 02/2020</span>
+                    <div class="man_contact_details">
+                        <span>
+                            <img src="./img/logo.png" />
+                        </span>
+                        <p>
+                            PocketDr.,<br/>
+                            The Palatine Centre,<br/>
+                            Durham University,<br/>
+                            Stockton Road,<br/>
+                            Durham<br/>
+                            UK<br/>
+                        </p>
+                    </div>
+                    <span class="inline-block small-text"><b>contact@pocketdr.co.uk</b></span>
+                    <span class="inline-block small-text">This app is intended to provide advisory medical information that will work in cooperation with your healthcare provider</span>
+                    <span class="inline-block small-text"><b>Warnings:</b> We are not permitted to provide a medical diagnosis</span>
+                </div>
+                <div class="ce_logo"><img src="./img/ce.png" /></div>
+                <div class="instructions_logo"><img src="./img/instructions_logo.jpg" /></div>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav-item"><span class="invisible">Now Calling <b>Tim</b>... Press the ambulance to cancel</span></div>
+            <a href="#toggle" class="mask"><i class="fas fa-ambulance"></i></a>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/c5734180b5.js"></script>
+    <script src="main.js"></script>
+</div>
